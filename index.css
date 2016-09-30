@@ -1,0 +1,47 @@
+td {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table {
+    width: 650px;
+    border-spacing: 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#boardDiv {
+    display: inline-block;
+}
+td {
+    height: 8px;
+    width: 4px;
+    padding: 0px;
+}
+
+.on {
+    background-color: cornflowerblue;
+}
+
+.off {
+    background-color: mediumspringgreen;
+}
+
+button {
+    padding: 4px;
+    margin: 4px;
+    width: 80px;
+}
+
+form {
+    vertical-align: top;
+    display: inline-block;
+}
+
+body {
+    font-family: Arial;
+}
+
+h4 {
+    width: 600px;
+}

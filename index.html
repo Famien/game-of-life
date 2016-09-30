@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6.170 Assignment 2: John Conways Game of Life</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+<div id="boardDiv">
+    <table id="game-table"></table>
+    <button id="start-button">Start</button>
+    <button id="pause-button">Pause</button>
+    <button id="step-button">Step</button>
+</div>
+    <form>
+        <input type="radio" name="starting-state" id="single-glider" value="" checked> Single Glider <br>
+        <input type="radio" name="starting-state" id="cool-glider-thing" value="" > Cool Glider Thing <br>
+        <input type="radio" name="starting-state" id="pulsar" value="" > Pulsar <br>
+        <input type="radio" name="starting-state" id="random" value="" > Random <br>
+        <input type="radio" name="starting-state" id="manual" value="" > Manual <br>
+    </form>
+
+<h4> Welcome to my version of John Conway's Game of Life! To play, pick a starting state, and press start.
+    You can use the manual version by selecting 'manual' and click pause, then clicking cells make them
+    alive or dead, and start again.</h4>
+<!--
+    The order you import your *.js files matters! If y.js depends on x.js, then import x.js before
+    y.js.
+
+    In a full-fledged JavaScript project, we could use a tool like Browserify (http://browserify.org/) or Webpack (https://webpack.github.io/) to figure out the order of the dependencies for us.
+-->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="./controller.js" charset="utf-8"></script>
+    <script src="./boardState.js" charset="utf-8"></script>
+    <script src="./states.js" charset="utf-8"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
