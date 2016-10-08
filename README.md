@@ -1,4 +1,4 @@
-Famien's version of John Conway's Game of Life
+# Famien's version of John Conway's Game of Life
 
 For this game the first concern was deparating the display of the game, and its underlying mechanics. 
 To address this I broke the game into a controller, which was in charge of displaying the html <table> which
